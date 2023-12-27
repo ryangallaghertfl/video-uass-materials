@@ -34,6 +34,8 @@ import SwiftUI
 
 struct AdaptingStack<Content: View>: View {
     
+    //note that from iOS 15.0, sizeCategory deprecated for dynamicTypeSize
+    @Environment(\.sizeCategory) var dynamicTypeSize
     var content: () -> Content
     //viewbuilder  allows the closure to accept multiple view components and treat them as one combined view.
     init(@ViewBuilder content: @escaping () -> Content) {
