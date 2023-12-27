@@ -42,7 +42,7 @@ struct ContrastListView: View {
         ListCellView(contrast: self.$viewModel.contrasts[index])
       }
       .navigationBarTitle("Contrast Ratios")
-        //bound to a constant
+        //bound to a constant that will listen for user modifying accessibility invert colors setting
       .alert(isPresented: .constant(invertColours), content: {
           Alert(title: Text("Please turn off Smart Invert!"), message: Text("RGB is no longer accurate, please try dark mode instead."))
       })
