@@ -33,6 +33,7 @@
 import SwiftUI
 
 struct ContrastListView: View {
+    @Environment(\.accessibilityInvertColors) var invertColours
   @ObservedObject var viewModel = ContrastViewModel(count: 9)
 
   var body: some View {
@@ -41,6 +42,10 @@ struct ContrastListView: View {
         ListCellView(contrast: self.$viewModel.contrasts[index])
       }
       .navigationBarTitle("Contrast Ratios")
+        //bound to a constant
+      .alert(isPresented: .constant(invertColours), content: {
+          Alert(title: Text("Please turn off Smart Invert!"), message: Text("RGB is no longer accurate, please try dark mode instead."))
+      })
     }
   }
 }
@@ -63,8 +68,8 @@ struct ListCellView: View {
           ColorPicker(contrast: self.$contrast)
         }
         HStack {
-          Text("Text \(contrast.text.description)")
-            .accessibility(label: Text("For Text color "
+            Text("Text \(contrast.text.description)")
+                .accessibility(label: Text("For Text color "
             + contrast.text.accDescription))
           Text("Bkgd \(contrast.bkgd.description)")
             .accessibility(label: Text("on Background color "
