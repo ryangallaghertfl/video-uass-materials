@@ -54,5 +54,6 @@ struct AdaptingStack<Content: View>: View {
 #Preview {
     AdaptingStack {
         Text("Hello world!")
+        Text("Hello world!")
     }
 }
