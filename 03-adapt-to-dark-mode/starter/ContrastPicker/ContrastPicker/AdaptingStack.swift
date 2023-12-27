@@ -43,7 +43,7 @@ struct AdaptingStack<Content: View>: View {
     }
     var body: some View {
         switch dynamicTypeSize {
-        case .accessibilityLarge:
+        case .accessibilityLarge, .accessibilityExtraLarge, .accessibilityExtraExtraLarge, .accessibilityExtraExtraExtraLarge:
             return AnyView(VStack(content: self.content).padding(.top, 10))
         default:
             return AnyView(HStack(alignment: .top, content: self.content))
