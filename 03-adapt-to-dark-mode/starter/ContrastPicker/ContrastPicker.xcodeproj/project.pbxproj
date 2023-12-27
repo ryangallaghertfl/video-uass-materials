@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		189C3F7F23F1CCAB000A8C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 189C3F7E23F1CCAB000A8C46 /* LaunchScreen.storyboard */; };
+		A1A8561E2B3C7ED30024849A /* AdaptingStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8561D2B3C7ED30024849A /* AdaptingStack.swift */; };
 		CDB0B97A238770E6006DC0CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB0B979238770E6006DC0CD /* Assets.xcassets */; };
 		CDB0B97D238770E6006DC0CD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDB0B97C238770E6006DC0CD /* Preview Assets.xcassets */; };
 		CDB0BB522389F7CB006DC0CD /* RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB0BB512389F7CB006DC0CD /* RGB.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		189C3F7E23F1CCAB000A8C46 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A1A8561D2B3C7ED30024849A /* AdaptingStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptingStack.swift; sourceTree = "<group>"; };
 		CDB0B970238770DE006DC0CD /* ContrastPicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContrastPicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDB0B979238770E6006DC0CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDB0B97C238770E6006DC0CD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 				CDB0B981238770E6006DC0CD /* Info.plist */,
 				CDBCAB53238B2A790089E25F /* Supporting Files */,
 				CDB0B97B238770E6006DC0CD /* Preview Content */,
+				A1A8561D2B3C7ED30024849A /* AdaptingStack.swift */,
 			);
 			path = ContrastPicker;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				CDBCAB55238B2ADF0089E25F /* ContrastViewModel.swift in Sources */,
 				CDB0BB522389F7CB006DC0CD /* RGB.swift in Sources */,
 				CDBCAB59238B33620089E25F /* ContrastListView.swift in Sources */,
+				A1A8561E2B3C7ED30024849A /* AdaptingStack.swift in Sources */,
 				DCA6ACE625EC1D9600EF9877 /* AppMain.swift in Sources */,
 				CDB0BB56238A2068006DC0CD /* ColorPicker.swift in Sources */,
 			);
