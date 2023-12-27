@@ -78,7 +78,9 @@ struct ListCellView: View {
           + " on Background color \(self.contrast.bkgd.accDescription)."))
           .font(.caption)
           .padding(2)
-        .background(Color(.white))
+        //.background(Color(.white)) causes text to disappear in dark mode
+          .background(Color(.systemBackground))
+          //adapts to dark mode automatically
           .cornerRadius(5)
       }
       .accessibilityElement(children: .contain)
