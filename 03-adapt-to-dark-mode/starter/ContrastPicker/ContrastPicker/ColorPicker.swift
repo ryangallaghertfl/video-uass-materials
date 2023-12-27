@@ -92,8 +92,11 @@ struct SliderBlock: View {
 
   var body: some View {
     VStack {
-      Text(colorString + ": " + colorInt)
-        .accessibility(hidden: true)
+        AdaptingStack {
+            Text(self.colorString + ": ")
+            Text(self.colorInt)
+        }
+        .accessibilityHidden(/*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
         .font(.caption)
       Slider(value: $colorValue,
         label: { Text(bkgdOrText + " " + colorString) })
