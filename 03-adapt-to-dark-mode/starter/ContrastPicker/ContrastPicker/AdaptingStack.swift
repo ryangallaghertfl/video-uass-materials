@@ -35,6 +35,10 @@ import SwiftUI
 struct AdaptingStack<Content: View>: View {
     
     var content: () -> Content
+    //viewbuilder  allows the closure to accept multiple view components and treat them as one combined view.
+    init(@ViewBuilder content: @escaping () -> Content) {
+        self.content = content
+    }
     var body: some View {
         content()
     }
